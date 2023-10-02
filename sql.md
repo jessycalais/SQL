@@ -53,7 +53,7 @@ CASE
                                 t.start_station_id = s.station_id
                               WHERE 
                                 s.status = 'closed' AND EXTRACT(YEAR FROM start_time) = 2014
-                             )    
+                             )
 END
 AS number_status_closed
 FROM
