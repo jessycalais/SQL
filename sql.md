@@ -58,11 +58,11 @@ SELECT
     AS number_status_closed
 FROM
     (
-    SELECT 
-      EXTRACT(YEAR FROM start_time) AS year,
-      start_station_id
+     SELECT 
+        EXTRACT(YEAR FROM start_time) AS year,
+        start_station_id
     FROM
-      `bigquery-public-data.austin_bikeshare.bikeshare_trips`
+        `bigquery-public-data.austin_bikeshare.bikeshare_trips`
     ) 
     AS t
 INNER JOIN
