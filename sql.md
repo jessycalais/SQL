@@ -2,60 +2,60 @@
 -- Utilizando subconsulta dentro do CASE
 SELECT
     t.year,
-CASE 
-    WHEN t.year = 2013 THEN (
-                              SELECT 
-                                COUNT(DISTINCT station_id)
-                              FROM 
-                                `bigquery-public-data.austin_bikeshare.bikeshare_trips` t
-                              INNER JOIN 
-                                `bigquery-public-data.austin_bikeshare.bikeshare_stations` s
-                              ON 
-                                t.start_station_id = s.station_id
-                              WHERE 
-                                s.status = 'active' AND EXTRACT(YEAR FROM start_time) = 2013
-                             ) 
-    WHEN t.year = 2014 THEN (
-                              SELECT 
-                                COUNT(DISTINCT station_id)
-                              FROM 
-                                `bigquery-public-data.austin_bikeshare.bikeshare_trips` t
-                              INNER JOIN 
-                                `bigquery-public-data.austin_bikeshare.bikeshare_stations` s
-                              ON 
-                                t.start_station_id = s.station_id
-                              WHERE 
-                                s.status = 'active' AND EXTRACT(YEAR FROM start_time) = 2014
-                             )
-END
-AS number_status_active,
-CASE 
-    WHEN t.year = 2013 THEN (
-                              SELECT 
-                               COUNT(DISTINCT station_id)
-                              FROM 
-                              `bigquery-public-data.austin_bikeshare.bikeshare_trips` t
-                              INNER JOIN 
-                              `bigquery-public-data.austin_bikeshare.bikeshare_stations` s
-                              ON 
-                               t.start_station_id = s.station_id
-                              WHERE 
-                               s.status = 'closed' AND EXTRACT(YEAR FROM start_time) = 2013
-                             ) 
-    WHEN t.year = 2014 THEN (
-                              SELECT 
-                              COUNT(DISTINCT station_id)
-                              FROM 
-                                `bigquery-public-data.austin_bikeshare.bikeshare_trips` t
-                              INNER JOIN 
-                                `bigquery-public-data.austin_bikeshare.bikeshare_stations` s
-                              ON 
-                                t.start_station_id = s.station_id
-                              WHERE 
-                                s.status = 'closed' AND EXTRACT(YEAR FROM start_time) = 2014
-                             )
-END
-AS number_status_closed
+    CASE 
+        WHEN t.year = 2013 THEN (
+                                  SELECT 
+                                    COUNT(DISTINCT station_id)
+                                  FROM 
+                                    `bigquery-public-data.austin_bikeshare.bikeshare_trips` t
+                                  INNER JOIN 
+                                    `bigquery-public-data.austin_bikeshare.bikeshare_stations` s
+                                  ON 
+                                    t.start_station_id = s.station_id
+                                  WHERE 
+                                    s.status = 'active' AND EXTRACT(YEAR FROM start_time) = 2013
+                                 ) 
+        WHEN t.year = 2014 THEN (
+                                  SELECT 
+                                    COUNT(DISTINCT station_id)
+                                  FROM 
+                                    `bigquery-public-data.austin_bikeshare.bikeshare_trips` t
+                                  INNER JOIN 
+                                    `bigquery-public-data.austin_bikeshare.bikeshare_stations` s
+                                  ON 
+                                    t.start_station_id = s.station_id
+                                  WHERE 
+                                    s.status = 'active' AND EXTRACT(YEAR FROM start_time) = 2014
+                                 )
+    END
+    AS number_status_active,
+    CASE 
+        WHEN t.year = 2013 THEN (
+                                  SELECT 
+                                   COUNT(DISTINCT station_id)
+                                  FROM 
+                                  `bigquery-public-data.austin_bikeshare.bikeshare_trips` t
+                                  INNER JOIN 
+                                  `bigquery-public-data.austin_bikeshare.bikeshare_stations` s
+                                  ON 
+                                   t.start_station_id = s.station_id
+                                  WHERE 
+                                   s.status = 'closed' AND EXTRACT(YEAR FROM start_time) = 2013
+                                 ) 
+        WHEN t.year = 2014 THEN (
+                                  SELECT 
+                                  COUNT(DISTINCT station_id)
+                                  FROM 
+                                    `bigquery-public-data.austin_bikeshare.bikeshare_trips` t
+                                  INNER JOIN 
+                                    `bigquery-public-data.austin_bikeshare.bikeshare_stations` s
+                                  ON 
+                                    t.start_station_id = s.station_id
+                                  WHERE 
+                                    s.status = 'closed' AND EXTRACT(YEAR FROM start_time) = 2014
+                                 )
+    END
+    AS number_status_closed
 FROM
     (
     SELECT 
