@@ -1,5 +1,5 @@
 ```SQL
--- Objetivo: identificar a porcentagem de notícias que possui o termo 'education'.
+-- Objetivo: identificar a porcentagem de notícias que possui o termo 'education' no corpo da matéria.
 -- Quantidade de dados na tabela: 
   -- 2225 linhas;
   -- 04 colunas: body, title, filename, category. 
