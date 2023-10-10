@@ -12,35 +12,35 @@ SELECT
     WHEN category = 'tech' THEN 
           ROUND((SELECT count(*)
                 FROM `bigquery-public-data.bbc_news.fulltext`
-                WHERE ((body LIKE '%education%' OR body LIKE '%Education%') AND category = 'tech') * 100 /
+                WHERE (body LIKE '%education%' OR body LIKE '%Education%') AND category = 'tech') * 100 /
                 (SELECT count(*)
                 FROM `bigquery-public-data.bbc_news.fulltext`
                 WHERE category = 'tech'), 2)
     WHEN category = 'sport' THEN 
           ROUND((SELECT count(*)
                 FROM `bigquery-public-data.bbc_news.fulltext`
-                WHERE ((body LIKE '%education%' OR body LIKE '%Education%') AND category = 'sport') * 100 /
+                WHERE (body LIKE '%education%' OR body LIKE '%Education%') AND category = 'sport') * 100 /
                 (SELECT count(*)
                 FROM `bigquery-public-data.bbc_news.fulltext`
                 WHERE category = 'sport'), 2)
     WHEN category = 'business' THEN 
           ROUND((SELECT count(*)
                 FROM `bigquery-public-data.bbc_news.fulltext`
-                WHERE ((body LIKE '%education%' OR body LIKE '%Education%') AND category = 'business') * 100 /
+                WHERE (body LIKE '%education%' OR body LIKE '%Education%') AND category = 'business') * 100 /
                 (SELECT count(*)
                 FROM `bigquery-public-data.bbc_news.fulltext`
                 WHERE category = 'business'), 2)
     WHEN category = 'politics' THEN 
           ROUND((SELECT count(*)
                 FROM `bigquery-public-data.bbc_news.fulltext`
-                WHERE ((body LIKE '%education%' OR body LIKE '%Education%') AND category = 'politics') * 100 /
+                WHERE (body LIKE '%education%' OR body LIKE '%Education%') AND category = 'politics') * 100 /
                 (SELECT count(*)
                 FROM `bigquery-public-data.bbc_news.fulltext`
                 WHERE category = 'politics'), 2)
     WHEN category = 'entertainment' THEN 
           ROUND((SELECT count(*)
                 FROM `bigquery-public-data.bbc_news.fulltext`
-                WHERE ((body LIKE '%education%' OR body LIKE '%Education%') AND category = 'entertainment') * 100 /
+                WHERE (body LIKE '%education%' OR body LIKE '%Education%') AND category = 'entertainment') * 100 /
                 (SELECT count(*)
                 FROM `bigquery-public-data.bbc_news.fulltext`
                 WHERE category = 'entertainment'), 2) 
