@@ -10,8 +10,8 @@ O arquivo **`sql_subconsultas_case.md`** contém uma consulta com o uso das segu
 * `AND`, `EXTRACT()`, `BETWEEN`;
 * `Subconsultas`.
   
-Utilizando esses conceitos, foi possível *pivotar* os dados sem utilizar a cláusula `PIVOT`.  
-> **NOTA:** Caso queira utilizar estes mesmos dados, utilize essas tabelas:
+Utilizando esses conceitos foi possível *pivotar* os dados sem utilizar a cláusula `PIVOT`.  
+> **NOTA:** Caso queira consultar estes mesmos dados, utilize essas tabelas:
 > * `bigquery-public-data.austin_bikeshare.bikeshare_trips`;
 > * `bigquery-public-data.austin_bikeshare.bikeshare_stations`.
 
@@ -25,7 +25,19 @@ O arquivo **`pivotar_case_sql.md`** contém uma consulta com o uso das seguintes
 * `AND`, `OR`, `ROUND()`;
 * `Subconsultas`.
 
-Utilizando esses conceitos, foi possível *pivotar* os dados sem utilizar a cláusula `PIVOT`.  
-> **NOTA:** Caso queira utilizar estes mesmos dados, utilize essa tabela:
+Utilizando esses conceitos foi possível *pivotar* os dados sem utilizar a cláusula `PIVOT`.  
+> **NOTA:** Caso queira consultar estes mesmos dados, utilize essa tabela:
 > * `bigquery-public-data.bbc_news.fulltext`.
 
+---
+
+**3) Funções de Agregação & WHERE com muitas condições**
+
+O arquivo **`funcoes_agregacao_sql.md`** contém uma consulta com o uso das seguintes ferramentas do **SQL**:
+* `SELECT`, `FROM`, `WHERE`, `GROUP BY`, `ORDER BY`;
+* `DISTINCT`, `AND`, `OR`, `ROUND()`;
+* `MIN()`, `MAX()`, `AVG()`.
+
+Utilizando esses conceitos foi possível obter algumas informações sobre possíveis mudanças nas notas de Matemática no SAEB antes e depois do ano 2020 (COVID-19) 
+> **NOTA:** Caso queira consultar estes mesmos dados, utilize essa tabela:
+> * `basedosdados.br_inep_saeb.municipio`.
