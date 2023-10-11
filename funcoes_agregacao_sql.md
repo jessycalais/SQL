@@ -1,5 +1,5 @@
 ```SQL
--- Objetivo: Identificar se houvesse mudança nas notas de Matemática no SAEB antes e depois do ano 2020 (COVID-19)
+-- Objetivo: Identificar se houve mudança nas notas de Matemática no SAEB antes e depois do ano 2020 (COVID-19)
 
 SELECT DISTINCT
   ano,
