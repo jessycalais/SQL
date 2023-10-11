@@ -6,8 +6,8 @@ Este repositório possui consultas a dados públicos disponíveis no **BigQuery*
 
 O arquivo **`sql_subconsultas_case.md`** contém uma consulta com o uso das seguintes ferramentas do **SQL**:
 * `SELECT`, `FROM`, `WHERE`, `GROUP BY`, `ORDER BY`;
-*  `COUNT()`, `DISTINCT`, `CASE`, `INNER JOIN`;
-* `AND`, `EXTRACT()`, `BETWEEN`;
+* `DISTINCT`, `CASE`, `INNER JOIN`;
+* `AND`, `BETWEEN`, `COUNT()`, `EXTRACT()`;
 * `Subconsultas`.
   
 Utilizando esses conceitos foi possível *pivotar* os dados sem utilizar a cláusula `PIVOT`.  
@@ -21,8 +21,8 @@ Utilizando esses conceitos foi possível *pivotar* os dados sem utilizar a cláu
 
 O arquivo **`pivotar_case_sql.md`** contém uma consulta com o uso das seguintes ferramentas do **SQL**:
 * `SELECT`, `FROM`, `WHERE`, `GROUP BY`;
-*  `COUNT()`, `LIKE`, `CASE`;
-* `AND`, `OR`, `ROUND()`;
+* `LIKE`, `CASE`;
+* `AND`, `OR`, `ROUND()`, `COUNT()`;
 * `Subconsultas`.
 
 Utilizando esses conceitos foi possível *pivotar* os dados sem utilizar a cláusula `PIVOT`.  
@@ -35,7 +35,8 @@ Utilizando esses conceitos foi possível *pivotar* os dados sem utilizar a cláu
 
 O arquivo **`funcoes_agregacao_sql.md`** contém uma consulta com o uso das seguintes ferramentas do **SQL**:
 * `SELECT`, `FROM`, `WHERE`, `GROUP BY`, `ORDER BY`;
-* `DISTINCT`, `AND`, `OR`, `ROUND()`;
+* `DISTINCT`;
+* `AND`, `OR`, `ROUND()`;
 * `MIN()`, `MAX()`, `AVG()`.
 
 Utilizando esses conceitos foi possível obter algumas informações sobre possíveis mudanças nas notas de Matemática no SAEB antes e depois do ano 2020 (COVID-19) 
