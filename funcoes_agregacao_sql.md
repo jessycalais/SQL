@@ -1,6 +1,8 @@
-```SQL
--- Objetivo: Identificar se houve mudança nas notas de Matemática no SAEB antes e depois do ano 2020 (COVID-19)
+:dart: Objetivo: Identificar se houve mudança nas notas de Matemática no SAEB antes e depois do ano 2020 (COVID-19).
 
+🎲 **Dados utilizados:** dados públicos disponíveis no BigQuery
+
+```SQL
 SELECT DISTINCT
   ano,
   rede,  
