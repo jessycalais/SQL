@@ -1,10 +1,13 @@
-```SQL
--- Objetivo: identificar a porcentagem de notícias que possui o termo 'education' no corpo da matéria.
--- Quantidade de dados na tabela: 
-  -- 2225 linhas;
-  -- 04 colunas: body, title, filename, category. 
--- Obs.: Fiz uma breve pesquisa e aparentemente esta tabela contém dados referentes ao ano de 2005.
+:dart: **Objetivo:** Identificar a porcentagem de notícias que possui o termo 'education' no corpo da matéria.  
 
+🎲 **Dados utilizados:** dados públicos disponíveis no BigQuery
+* Quantidade de dados na tabela: 
+   * 2225 linhas;
+   * 04 colunas: body, title, filename, category. 
+> **NOTA:** Fiz uma breve pesquisa e aparentemente esta tabela contém dados referentes ao ano de 2005.
+
+
+```SQL
 SELECT 
   category,
   COUNT(*) AS number_total_by_category,  
