@@ -1,4 +1,4 @@
-:dart: **Objetivo:** Identificar a porcentagem de notícias que possui o termo 'education' no corpo da matéria.  
+:dart: **Objetivo:** Identificar a porcentagem de notícias que possui o termo ***education*** no corpo da matéria.  
 
 🎲 **Dados utilizados:** dados públicos disponíveis no BigQuery
 * Quantidade de dados na tabela: 
