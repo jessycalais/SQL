@@ -25,7 +25,8 @@ O arquivo **`pivotar_case_sql.md`** contém uma consulta com o uso das seguintes
 * `AND`, `OR`, `ROUND()`, `COUNT()`;
 * `Subconsultas`.
 
-Utilizando esses conceitos foi possível *pivotar* os dados sem utilizar a cláusula `PIVOT`.  
+Utilizando esses conceitos foi possível *pivotar* os dados sem utilizar a cláusula `PIVOT`.   
+Além disso, foi possível verificar a quantidade/porcentagem de vezes que o termo ***education*** foi tratado em algumas matérias da BBC.
 > **NOTA:** Caso queira consultar estes mesmos dados, utilize essa tabela:
 > * `bigquery-public-data.bbc_news.fulltext`.
 
