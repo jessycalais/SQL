@@ -1,4 +1,5 @@
 :dart: **Objetivo:** Determinar os três países com mais casos de covid registrados nos anos de 2019 e 2020 (TOP 3).  
+
 🎲 **Dados utilizados:** dados públicos disponíveis no BigQuery
 
 ```SQL
