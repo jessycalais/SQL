@@ -46,9 +46,9 @@ Utilizando esses conceitos foi possível obter algumas informações sobre poss�
 
 ---
 
-**4) Tabela temporária com WITH & funções de agregação**  
+**4) CTE com WITH & funções de agregação**  
 
-O arquivo **`tabela_temporaria_WITH.md`** contém uma consulta com o uso das seguintes ferramentas do **SQL**:
+O arquivo **`CTE_WITH.md`** contém uma consulta com o uso das seguintes ferramentas do **SQL**:
 * `SELECT`, `FROM`, `WHERE`, `GROUP BY`, `ORDER BY DESC`, `LIMIT`;
 * `SUM()`;
 * `UNION ALL`;
