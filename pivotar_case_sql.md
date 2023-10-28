@@ -1,12 +1,15 @@
-:dart: **Objetivo:** Identificar a porcentagem de notícias que possui o termo ***education*** no corpo da matéria.  
+:dart: **Objetivo:** Identificar a porcentagem de notícias que possui o termo ***education*** no corpo da matéria.    
 
 🎲 **Dados utilizados:** dados públicos disponíveis no BigQuery
 * Quantidade de dados na tabela: 
    * 2225 linhas;
    * 04 colunas: body, title, filename, category. 
 > **NOTA:** Fiz uma breve pesquisa e aparentemente esta tabela contém dados referentes ao ano de 2005.
+ 
+:mag: **Prévia da tabela no BigQuery:**  
+<img src="image/previa_fulltext.png" alt="drawing" width="600"/>  
 
-
+:computer: **Consulta SQL:**
 ```SQL
 SELECT 
   category,
@@ -52,3 +55,6 @@ FROM `bigquery-public-data.bbc_news.fulltext`
 GROUP BY
   category;
 ```
+
+:mag: **Resultado da Consulta no BigQuery:**  
+<img src="image/fulltext_result.png" alt="drawing" width="500"/>  
