@@ -46,14 +46,28 @@ Utilizando esses conceitos foi possível obter algumas informações sobre poss�
 
 ---
 
-**4) CTE com WITH & funções de agregação**  
+**4) CTE com WITH, funções de agregação e junção de tabelas**  
 
 O arquivo **`CTE_WITH.md`** contém uma consulta com o uso das seguintes ferramentas do **SQL**:
 * `SELECT`, `FROM`, `WHERE`, `GROUP BY`, `ORDER BY DESC`, `LIMIT`;
 * `SUM()`;
-* `UNION ALL`;
-* `Tabelas temporárias - WITH`.
+* `WITH`, `UNION ALL`.
   
-Utilizando esses conceitos foi possível determinar os três países com mais casos de COVID-2019 registrados nos anos de 2019 e 2020 (TOP 3).
+Utilizando estes conceitos, determinei os três países com mais casos de COVID-19 registrados nos anos de 2019 e 2020 (TOP 3).
 > **NOTA:** Caso queira consultar estes mesmos dados, utilize essa tabela:
-> * `bigquery-public-data.covid19_ecdc.covid_19_geographic_distribution_worldwide`.
+> * `bigquery-public-data.covid19_ecdc.covid_19_geographic_distribution_worldwide`
+---  
+
+**5) SQL em DataFrame do Pandas e `FULL OUTER JOIN` *exclusivo***  
+
+A pasta *SQL em DataFrames* contém uma consulta realizada em um DataFrame da biblioteca `pandas` do Python.    
+Além do uso de `SQL` *puro*, utilizei o método `.merge()` em Python para responder algumas perguntas.  
+A consulta utilizando linguagem `SQL` foi possível com a utilização da biblioteca `pandasql`. As funções e cláusulas utilizadas na consulta são:
+* `SELECT`, `FROM`, `WHERE`, `ON`;
+* `COALESCE()`;
+* `INNER JOIN`, `FULL OUTER JOIN` e `FULL OUTER JOIN` *exclusivo*.
+  
+Utilizando esses conceitos foi possível identificar alunos que realizaram as duas ou apenas uma das atividades analisadas.   
+> **NOTA:** Caso queira utilizar estes mesmos dados, use os arquivos `.xlsx` disponibilizados na pasta.
+
+---
